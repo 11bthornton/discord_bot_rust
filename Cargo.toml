@@ -1,0 +1,13 @@
+[package]
+name = "discordbot"
+version = "0.1.0"
+authors = ["blt1g18 <blt1g18@soton.ac.uk>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serenity = {default-features = false, features = ["client", "gateway", "rustls_backend", "model", "voice"] }
+tokio = { version = "1.5.0", features = ["full"] }
+rand = "0.8.3"
+lazy_static = "1.4.0"
